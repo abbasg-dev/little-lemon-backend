@@ -9,6 +9,10 @@ import { errorHandler } from "./middleware/error-handler.js";
 // import routes
 import authRoutes from "./routes/auth.js";
 
+// import routes
+import authRoutes from "./routes/auth.js";
+import userRoutes from "./routes/user.js";
+
 dotenv.config();
 
 // connect to db
@@ -27,6 +31,7 @@ app.use(errorHandler);
 
 // middleware
 app.use(`${api}/auth`, authRoutes);
+app.use(`${api}/user`, userRoutes);
 
 const port = process.env.PORT || 5000;
 
