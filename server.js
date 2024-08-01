@@ -8,9 +8,6 @@ import { errorHandler } from "./middleware/error-handler.js";
 
 // import routes
 import authRoutes from "./routes/auth.js";
-
-// import routes
-import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/user.js";
 
 dotenv.config();
